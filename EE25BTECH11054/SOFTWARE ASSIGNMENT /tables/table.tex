@@ -1,0 +1,63 @@
+\documentclass{article}
+
+% --- PACKAGES ADDED TO FIX ERRORS ---
+\usepackage{booktabs}  % Provides \toprule, \midrule, \bottomrule for better tables
+\usepackage{float}     % Provides the [H] option to place floats "Here"
+% -----------------------------------
+
+\begin{document}
+
+% tables.tex - Error analysis tables for SVD Image Compression Report
+
+% Table 1: Image 1 Error Analysis
+\begin{table}[H]
+\centering
+\begin{tabular}{cc}
+\toprule
+\textbf{k (Rank)} & \textbf{Frobenius Error} \\
+\midrule
+5   & 20704.27 \\
+20  & 10634.41 \\
+50  & 6185.64 \\
+100 & 3672.93 \\
+\bottomrule
+\end{tabular}
+\caption{Error analysis for Image 1 at different k values}
+\label{tab:error_image1}
+\end{table}
+
+% Table 2: Image 2 Error Analysis
+\begin{table}[H]
+\centering
+\begin{tabular}{cc}
+\toprule
+\textbf{k (Rank)} & \textbf{Frobenius Error} \\
+\midrule
+5   & 4713.60 \\
+20  & 2126.56 \\
+50  & 880.50 \\
+100 & 164.78 \\
+\bottomrule
+\end{tabular}
+\caption{Error analysis for Image 2 at different k values}
+\label{tab:error_image2}
+\end{table}
+
+% Table 3: Image 3 Error Analysis
+\begin{table}[H]
+\centering
+\begin{tabular}{cc}
+\toprule
+\textbf{k (Rank)} & \textbf{Frobenius Error} \\
+\midrule
+5   & 11146.31 \\
+20  & 3808.19 \\
+50  & 1160.14 \\
+100 & 512.35 \\
+\bottomrule
+\end{tabular}
+\caption{Error analysis for Image 3 at different k values}
+\label{tab:error_image3}
+\end{table}
+
+\end{document}
